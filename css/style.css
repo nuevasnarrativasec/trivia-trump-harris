@@ -582,7 +582,7 @@ body{
 @media only screen and (max-height: 732px) { 
 
     #startScreen{
-        height: 120vh;
+        height: 100vh;
     }
 
 }
