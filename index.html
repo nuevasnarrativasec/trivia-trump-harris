@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Para que Google no indexe este index-->
+    <meta name="googlebot" content="noindex" />
+    <meta name="googlebot-news" content="nosnippet" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!---->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css?v3">
+
+    <style>
+        #gpt_zocalo, 
+        #clever-45754-sticky-footer-shadow,
+        #browsi_wrapper_0_ai_1_rc_0,
+        #browsi_wrapper_1_ai_1_rc_0,
+        #browsi_wrapper_2_ai_1_rc_0,
+        #browsi_wrapper_3_ai_1_rc_0,
+        #browsi_wrapper_4_ai_1_rc_0,
+        #browsi_wrapper_5_ai_1_rc_0,
+         #browsi_wrapper_6_ai_1_rc_0,
+        #browsi_wrapper_7_ai_1_rc_0,
+        #browsi_wrapper_8_ai_1_rc_0,
+        #browsi_wrapper_9_ai_1_rc_0,
+        #browsi_wrapper_10_ai_1_rc_0,
+        .fs-sticky-footer,
+        .orp-player-wrapper,
+        #clever-45754-sticky-footer,
+        #elcomercio_zocalo{
+                display: none !important;
+                height: 0 !important;
+        }   
+        .nav-d__main-scroll.scrolled{
+            z-index: 9999;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box-header"> 
+        <div class="ctn-header">
+            
+            <div id="social">
+                <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+        
+                <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="#">Whatsapp</button>
+        
+                <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+            </div>
+        </div>  
+    </div>
+
+    <div id="startScreen">
+        <div class="box-titular">
+                        
+            <h1>
+                Trump 
+                <br>
+                o 
+                <br>
+                Harris
+            </h1>
+            <p>
+                ¿Con qué candidato simpatizas más?
+            </p>
+            <button onclick="startQuiz()">Empezar</button>
+        </div>      
+        <div class="box-footer">
+            <p>
+                <span>Encuesta:</span> Mundo El Comercio               
+            </p>
+            <p>
+                <span>Realización:</span> Nuevas Narrativas EC
+            </p>
+        </div>
+    </div>
+
+    <div class="box-main-trivia" id="box-main-trivia">    
+        <div class="box-header-interior">
+            <p>Trump o Harris</p>
+        </div>    
+        <form id="quizForm">
+            <div class="question" id="question1">         
+                <h6 class="contador" id="uno">
+                    <span>1</span>/5
+                </h6>
+                <p>En temas sobre el aborto, con qué pensamiento te identificas más:</p>
+                <div class="box-preguntas">
+                    <label><input type="radio" name="q1" value="Trump">A) A favor</label>
+                    <label><input type="radio" name="q1" value="Harris">B) En contra</label>                  
+                </div>    
+                <div class="box-botones">
+                    <button class="siguiente" type="button" onclick="nextQuestion(1)" disabled>Continuar</button>
+                </div>                
+            </div>
+    
+            <div class="question" id="question2">
+                <h6 class="contador" id="dos">
+                    <span>2</span>/5
+                </h6>
+                <p class="small">En temas sobre el aborto, con qué pensamiento te identificas más:</p>
+                <div class="box-preguntas">
+                    <label><input type="radio" name="q2" value="Trump">A) A favor</label>
+                    <label><input type="radio" name="q2" value="Harris">B) En contra</label> 
+                </div>
+                <div class="box-botones">
+                    <button class="previo" type="button" onclick="prevQuestion(2)">
+                        <img src="./img/btn-previo.png" alt="" width="100%">
+                    </button>
+                    <button class="siguiente" type="button" onclick="nextQuestion(2)" disabled>Continuar</button>
+                </div>                
+            </div>
+    
+            <div class="question" id="question3">
+                <h6 class="contador" id="tres">
+                    <span>3</span>/5
+                </h6>
+                <p>¿Cuál es tu talento?</p>
+                <div class="box-preguntas">
+                    <label><input type="radio" name="q3" value="Trump">A) A favor</label>
+                    <label><input type="radio" name="q3" value="Harris">B) En contra</label> 
+                </div>
+                <div class="box-botones">
+                    <button class="previo" type="button" onclick="prevQuestion(3)">
+                        <img src="./img/btn-previo.png" alt="" width="100%">
+                    </button>
+                    <button class="siguiente" type="button" onclick="nextQuestion(3)" disabled>Continuar</button>
+                </div>                
+            </div>
+    
+            <div class="question" id="question4">
+                <h6 class="contador" id="cuatro">
+                    <span>4</span>/5
+                </h6>
+                <p>¿Cómo sería una clase perfecta para ti?</p>
+                <div class="box-preguntas">
+                    <label><input type="radio" name="q4" value="Trump">A) A favor</label>
+                    <label><input type="radio" name="q4" value="Harris">B) En contra</label> 
+                </div>            
+                <div class="box-botones">
+                    <button class="previo" type="button" onclick="prevQuestion(4)">
+                        <img src="./img/btn-previo.png" alt="" width="100%">
+                    </button>
+                    <button class="siguiente" type="button" onclick="nextQuestion(4)" disabled>Continuar</button>
+                </div>                
+            </div>
+
+            <div class="question" id="question5">
+                <h6 class="contador" id="cinco">
+                    <span>5</span>/5
+                </h6>
+                <p>¿Cómo sería una clase perfecta para ti?</p>
+                <div class="box-preguntas">
+                    <label><input type="radio" name="q5" value="Trump">A) A favor</label>
+                    <label><input type="radio" name="q5" value="Harris">B) En contra</label> 
+                </div>            
+                <div class="box-botones">
+                    <button class="previo" type="button" onclick="prevQuestion(5)">
+                        <img src="./img/btn-previo.png" alt="" width="100%">
+                    </button>
+                    <button class="siguiente" type="button" onclick="calculateResult()" disabled>Ver resultado</button>
+                </div>                
+            </div>  
+        </form>  
+    </div>
+
+    <div class="box-main-result" id="box-main-result">        
+        <div class="result" id="result">            
+        </div>        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+
+    <!-- compartir -->
+    <script>
+        function shareUrl(event) {
+            const button = event.target;
+            const url = button.getAttribute('data-url');
+            
+            const sharer = button.getAttribute('data-sharer');
+            let shareUrl = '';
+
+            switch (sharer) {
+            case 'facebook':
+                const fbHashtag = button.getAttribute('data-hashtag') || '';
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&hashtag=${encodeURIComponent(fbHashtag)}`;
+                break;
+                
+            case 'whatsapp':
+                const whatsappTitle = button.getAttribute('data-title');
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappTitle + ' ' + url)}`;
+                break;
+                
+            case 'twitter':
+                const twitterTitle = button.getAttribute('data-title');
+                const twitterHashtags = button.getAttribute('data-hashtags');
+                const twitterVia = button.getAttribute('data-via');
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterTitle)}&url=${encodeURIComponent(url)}&hashtags=${twitterHashtags}&via=${twitterVia}`;
+                break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        document.querySelectorAll('.sharer').forEach(button => {
+            button.addEventListener('click', shareUrl);
+        });
+    </script>
+
+    <!-- trivia -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('startScreen').style.display = 'block';
+        });
+
+        function startQuiz() {
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('box-main-trivia').style.display = 'block';
+            document.getElementById('quizForm').style.display = 'block';
+            showQuestion(1);
+        }
+
+        function showQuestion(questionNumber) {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach((question, index) => {
+                question.classList.remove('active');
+                if (index === questionNumber - 1) {
+                    question.classList.add('active');
+                }
+            });
+        }
+
+        function nextQuestion(current) {
+            showQuestion(current + 1);
+        }
+
+        function prevQuestion(current) {
+            showQuestion(current - 1);
+        }
+
+        function calculateResult() {
+            const form = document.getElementById('quizForm');
+            const values = {
+                'Trump': 0,
+                'Harris': 0
+            };
+
+            const descriptions = {
+                'Trump': '<img src="./img/bg-resultado-trump.jpg" alt="Trump" width="100%"><h4 id="trump"><span>Te identificas con</span>Donald Trump</h4><p><span>Te identificas con este candidato republicano</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+                'Harris': '<img src="./img/bg-resultado-harris.jpg" alt="Harris" width="100%"><h4 id="harris"><span>Te identificas con</span>Kamala Harris</h4><p><span>Te identificas con esta candidata demócrata</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>'
+            };
+
+            const answers = new FormData(form);
+
+            for (let [key, value] of answers.entries()) {
+                values[value]++;
+            }
+
+            let result = '';
+            let max = 0;
+
+            for (let [key, value] of Object.entries(values)) {
+                if (value > max) {
+                    max = value;
+                    result = key;
+                }
+            }
+
+            // Oculta la pregunta 5
+            document.querySelector('.question.active').classList.remove('active');
+            document.getElementById('box-main-trivia').style.display = 'none';
+            document.getElementById('box-main-result').style.display = 'block';
+            document.getElementById('result').style.display = 'block';
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <div class="box-ctn-resultado"> 
+                    ${descriptions[result]}            
+                    <a href="./index.html">Intentar de nuevo</a>
+                </div>
+                <div class="box-footer footer-resultado">
+                    <p>
+                        <span>Encuesta:</span> Mundo El Comercio                
+                    </p>
+                    <p>
+                        <span>Realización:</span> Nuevas Narrativas EC
+                    </p>
+                </div>`;
+        }
+
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', (event) => {
+                const currentQuestion = event.target.closest('.question');
+                const nextButton = currentQuestion.querySelector('button[onclick^="nextQuestion"], button[onclick="calculateResult()"]');
+                nextButton.disabled = false;
+            });
+        });
+
+
+    </script>
+    
+    <!-- active label -->
+    <script>
+        document.querySelectorAll('.box-preguntas label').forEach(label => {
+            label.addEventListener('click', function() {
+                document.querySelectorAll('.box-preguntas label').forEach(label => label.classList.remove('active'));               
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>

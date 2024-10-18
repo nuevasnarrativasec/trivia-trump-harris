@@ -1,0 +1,588 @@
+html{
+   
+}
+
+body{
+    
+
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.box-header{
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+    .ctn-header{
+        margin: 0 auto;
+        max-width: 900px;     
+        padding: 10px 0;   
+        text-align: right;
+    }
+        img.logo-saltar-intro{
+            display: inline-block;
+            float: left;
+            margin-top: 10px;
+            max-width: 140px;
+            vertical-align: top;
+        }
+        #social{   
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;            
+            vertical-align: top;
+        }
+            #social ul{
+                display: inline-block;
+                margin: 0 auto;
+                padding: 0;
+                vertical-align: middle;
+            }
+                #social ul li{
+                    cursor: pointer;
+                    display: inline-block;
+                    margin: 0 3px;
+                    vertical-align: middle;
+                }
+                    #social ul li a{
+                        cursor: pointer;    
+                        height: 36px;
+                        width: 36px;
+                    }
+                        #fb{
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #wst{                
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: none;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #tw{            
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }   
+
+#startScreen{
+    background: url('../img/bg-portada.jpg') no-repeat center top;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+    .box-titular{
+        margin: 0 auto;
+        left: 50%;
+        max-width: 600px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;        
+        z-index: 10;   
+    }
+        span.separador{
+            background-color: #F3D264;
+            display: block;
+            height: 1px;
+            margin: 5px auto;
+            width: 180px;
+        }
+        .box-titular img{
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+        }
+        .box-titular h1{
+            color: #fff;
+            font: 42px/1.1 "Noto Serif KR", serif;
+            font-weight: 900;
+            margin: 20px auto;
+            max-width: 560px;
+        }
+            .box-titular h1 span{
+                color: #F3D264;
+            }
+        .box-titular p{
+            color: #fff;
+            font: 18px / 1.3 "Noto Serif KR", serif;
+            margin: 20px auto;
+            max-width: 530px;            
+        }
+            .box-titular p span{
+                font-weight: 700;
+            }
+    #startScreen button{
+        background-color: #fff;
+        border: none;
+        border-radius: 25px;
+        color: #4c4529;
+        cursor: pointer;
+        font: 18px/1 "Noto Serif KR", serif;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+
+.box-main-trivia{   
+    position: relative;
+
+    display: none;
+}
+    .box-main-trivia .logo-saltar-intro-interior{
+        display: block;
+        left: 40px;
+        margin: 10px auto;
+        max-width: 180px;
+        position: absolute;
+        top: 20px;        
+    }
+    #quizForm{
+        margin: 0 auto;       
+        width: 100%;
+    }
+    .box-preguntas{
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0 20px;
+        max-width: 330px;
+        text-align: left;
+        vertical-align: top;
+    }
+        h6.contador{
+            color: #000;
+            display: block;
+            font: 15px/60px "Noto Serif KR", serif;           
+            height: 70px;
+            margin: 0 auto 10px;
+            max-width: 70px;
+        }
+            h6.contador span{
+                font-size: 30px;
+            }
+            #uno{
+                background: url('../img/circulo-1.png') no-repeat center center;
+                background-size: 100%;
+            }
+            #dos{
+                background: url('../img/circulo-2.png') no-repeat center center;
+                background-size: 100%;
+            }
+            #tres{
+                background: url('../img/circulo-3.png') no-repeat center center;
+                background-size: 100%;
+            }
+            #cuatro{
+                background: url('../img/circulo-4.png') no-repeat center center;
+                background-size: 100%;
+            }
+            #cinco{
+                background: url('../img/circulo-5.png') no-repeat center center;
+                background-size: 100%;
+            }
+        .box-main-trivia .question{
+            margin: 0 auto;        
+            padding-top: 85px;    
+            text-align: center;
+            width: 750px;
+        }
+            .box-main-trivia .question p{
+                color: #000;
+                font: 18px/1.3 "Noto Serif KR", serif;
+                font-weight: 500;
+                margin: 20px auto 40px;
+                max-width: 400px;
+                text-align: center;
+            }
+                .box-main-trivia .question p.small{
+                    font-size: 18px;
+                    line-height: 1.3;
+                }
+                .box-main-trivia .question p span.celeste{
+                    color: #65ABF3;
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .box-main-trivia .question p span.regular{
+                    display: block;
+                    font-weight: 400;
+                }
+            .box-main-trivia .question label{
+                border: 1px solid #000;
+                border-radius: 15px;
+                box-sizing: border-box;
+                color: #000;
+                cursor: pointer;
+                display: block;                
+                font: 16px / 1.6 "Noto Serif KR", serif;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+                input[type=radio]{
+                    accent-color: #F3D264;
+                    opacity: 0;
+                }
+                .box-main-trivia .question label:hover,
+                label.active{
+                    background-color: #000;
+                    color: #fff !important;
+                }
+        .box-botones{
+            margin: 30px auto 0;
+            text-align: center;
+        }
+            button.siguiente{
+                background-color: #fff;
+                border: 1px solid #000;
+                border-radius: 25px;
+                color: #4c4529; 
+                cursor: pointer;          
+                display: inline-block;
+                font: 18px / 1.3 "Noto Serif KR", serif;
+                font-weight: 700;
+                margin: 10px auto;
+                padding: 10px 30px;            
+            }
+                button.siguiente:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
+                button.siguiente:disabled{
+                    background-color: #c2c2c2;
+                    cursor: not-allowed;
+                    pointer-events: none;
+                    opacity: .3;
+                }
+            button.previo{
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: top;
+            }
+                button.previo img{
+                    margin: 13px auto;
+                    max-width: 50px;                    
+                }
+                
+.box-main-result{    
+    position: relative;
+
+    display: none;
+}
+    .box-main-result .logo-saltar-intro-interior{
+        display: block;
+        left: 40px;
+        margin: 10px auto;
+        max-width: 180px;
+        position: absolute;
+        top: 20px;        
+    }
+    #result{        
+        /*padding-top: 85px;*/
+        position: relative;
+        z-index: 10;
+
+        display: none;
+    }
+        .box-ctn-resultado{
+            margin: 0 auto;
+            /*max-width: 600px;
+            width: 650px;*/
+        }
+            img.btn-pulgar{
+                display: block;
+                margin: 10px auto;
+                max-width: 70px;
+            }
+            .box-ctn-resultado h5{
+                color: #fff;
+                font: 24px / 1.3 "Montserrat", sans-serif;
+                font-weight: 800;
+                text-align: center;
+                margin: 0 auto 10px;
+            }
+            .box-ctn-resultado h4{
+                border-bottom: 1px solid #bebebe;
+                border-top: 1px solid #bebebe;
+                color: #F3D264;
+                font: 28px/1.2 "Noto Serif KR", serif;
+                font-weight: 900;                
+                margin: 0 auto 10px;
+                max-width: 300px;
+                padding: 15px 0;
+                text-align: center;
+            }
+                .box-ctn-resultado h4#trump{
+                    color: #861615;
+                }
+                .box-ctn-resultado h4#harris{
+                    color: #083168;
+                }
+                    .box-ctn-resultado h4#trump span,
+                    .box-ctn-resultado h4#harris span{
+                        color: #000;
+                        display: block;
+                        font-size: 16px;
+                    }
+            .box-ctn-resultado img{
+                display: block;
+                margin: 0 auto 20px;
+                max-width: 100%;
+            }
+            .box-ctn-resultado p{
+                color: #000;
+                font: 16px/1.8 "Noto Serif KR", serif;
+                font-weight: 400;
+                margin: 0 auto;
+                max-width: 450px;
+                text-align: center;
+            }
+                .box-ctn-resultado p span{
+                   font-weight: 800;
+                }
+            .box-ctn-resultado a{
+                background-color: #fff;
+                border: 1px solid #000;
+                border-radius: 25px;
+                color: #4c4529; 
+                display: block;
+                font: 17px/1.5 "Noto Serif KR", serif;
+                font-weight: 600;
+                margin: 30px auto 0;
+                max-width: 200px;                
+                text-align: center;
+                text-decoration: none;  
+                padding: 10px;
+            }
+                .box-ctn-resultado a:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
+.box-footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}   
+    .box-footer p{
+        color: #fff;
+        font: 15px / 1.3 "Montserrat", sans-serif;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+        .box-footer p span{
+            
+            font-weight: 600;
+        }
+.footer-resultado{
+    position: relative;
+    margin-top: 60px;
+}
+            
+
+.question, #quizForm {
+    display: none;
+}
+.question.active {
+    display: block;
+}
+#startScreen {
+    display: block;
+    text-align: center;
+}
+.question img{
+    display: block;
+    margin: 0 auto;
+    max-width: 65px;
+}
+
+.box-header-interior{
+    background: url('../img/bg-header-interior.jpg') no-repeat center center;
+    background-size: 100%;
+    box-sizing: border-box;
+    height: 105px;
+    position: relative;
+    z-index: 90;
+}
+    .box-header-interior p{
+        color: #fff;
+        font: 24px/1.1 "Noto Serif KR", serif;
+        font-weight: 900;
+        margin: 0 auto;
+        padding: 35px 0 0;
+        text-align: center;
+    }
+
+@media only screen and (max-width: 640px) {    
+
+    
+        .box-titular{
+            /*left: inherit;
+            padding-top: 100px;
+            position: relative;
+            transform: inherit;
+            top: inherit;*/
+        }
+
+    .ctn-header{
+        padding: 20px;
+        text-align: right;
+    }
+        #wst{
+            display: inline-block;
+            vertical-align: top;
+        }
+    .box-main-trivia .logo-saltar-intro-interior{
+        left: 20px;
+        margin: 5px auto;
+    }
+    #startScreen{
+       background: url('../img/bg-portada-movil.jpg') no-repeat center center;
+       background-size: cover;
+    }
+        .box-titular{
+            width: 90%;
+        }
+            .box-titular h1{
+                font-size: 3em;
+            }
+            .box-titular p{
+                font-size: 19px;
+                line-height: 1.4;
+            }
+    body .box-main-trivia{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+        #quizForm{
+            height: 100%;
+            left: inherit;
+            padding-bottom: 50px;
+            padding-top: 100px;
+            position: relative;
+            transform: inherit;
+            top: inherit;
+        }
+        .box-main-trivia .question{
+            padding-top: 0;
+            width: 100%;
+        }
+        .box-main-trivia .question p{
+            font-size: 1.2em;
+            line-height: 1.5;
+            padding: 0 20px;
+        }
+            .box-preguntas{
+                display: block;
+            }
+        .box-main-trivia .question label{
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        .box-main-trivia .question p span.celeste{
+            font-size: 19px;
+        }
+    body #result{
+        background: transparent;
+        height: auto;
+        /*padding-bottom: 50px;*/
+    }
+        .box-main-result{
+            height: 100vh;
+            overflow: auto;
+        }
+        .box-ctn-resultado{  
+            background: transparent;
+            border: none; 
+            height: auto;    
+            left: inherit; 
+            /*margin-top: 100px;*/
+            padding: 0;   
+            position: relative;
+            top: 0;
+            transform: inherit; 
+            width: 100%;
+        }
+            .box-ctn-resultado img.logo-plataforma{
+                max-width: 200px;
+            }
+            .box-ctn-resultado p{
+                font-size: 17px;
+                line-height: 1.6;
+                padding: 0 20px;
+            }   
+    
+    
+    .box-main-trivia .question p.small{
+        font-size: 1.2em;
+        line-height: 1.2;
+    }
+    .footer-resultado{
+        margin-top: 80px;
+        position: relative;
+    }
+    img.btn-pulgar{
+        margin: 0px auto 5px;
+    }
+    .box-ctn-resultado a{
+        margin: 20px auto 0;
+    }
+    #question1,
+    #question2,
+    #question3,
+    #question4,
+    #question7{
+        /*height: 100vh;*/
+    }
+
+    .box-header-interior{
+        background: url('../img/bg-header-interior-movil.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+        z-index: 100;
+    }
+
+}
+
+@media only screen and (max-width: 768px) { 
+
+    .box-main-trivia,
+    #result{
+        
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .box-main-trivia,
+    #result{
+        
+    }
+
+}
+
+@media only screen and (max-height: 732px) { 
+
+    #startScreen{
+        height: 120vh;
+    }
+
+}
