@@ -161,7 +161,7 @@ body{
         box-sizing: border-box;
         display: inline-block;
         margin: 0 20px;
-        max-width: 330px;
+        max-width: 500px;
         text-align: left;
         vertical-align: top;
     }
@@ -232,12 +232,13 @@ body{
                 cursor: pointer;
                 display: block;                
                 font: 16px / 1.6 "Noto Serif KR", serif;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 padding: 10px;
             }
                 input[type=radio]{
                     accent-color: #F3D264;
                     opacity: 0;
+                    width: 0;
                 }
                 .box-main-trivia .question label:hover,
                 label.active{
@@ -475,7 +476,7 @@ body{
             height: 100%;
             left: inherit;
             padding-bottom: 50px;
-            padding-top: 100px;
+            padding-top: 20px;
             position: relative;
             transform: inherit;
             top: inherit;
