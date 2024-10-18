@@ -415,7 +415,7 @@ body{
 
 .box-header-interior{
     background: url('../img/bg-header-interior.jpg') no-repeat center center;
-    background-size: 100%;
+    background-size: cover;
     box-sizing: border-box;
     height: 105px;
     position: relative;
