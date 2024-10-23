@@ -177,23 +177,27 @@ body{
                 font-size: 30px;
             }
             #uno{
-                background: url('../img/circulo-1.png') no-repeat center center;
+                background: url('../img/circulo-1-2.png') no-repeat center center;
                 background-size: 100%;
             }
             #dos{
-                background: url('../img/circulo-2.png') no-repeat center center;
+                background: url('../img/circulo-2-2.png') no-repeat center center;
                 background-size: 100%;
             }
             #tres{
-                background: url('../img/circulo-3.png') no-repeat center center;
+                background: url('../img/circulo-3-3.png') no-repeat center center;
                 background-size: 100%;
             }
             #cuatro{
-                background: url('../img/circulo-4.png') no-repeat center center;
+                background: url('../img/circulo-4-4.png') no-repeat center center;
                 background-size: 100%;
             }
             #cinco{
-                background: url('../img/circulo-5.png') no-repeat center center;
+                background: url('../img/circulo-5-2.png') no-repeat center center;
+                background-size: 100%;
+            }
+            #seis{
+                background: url('../img/circulo-6-2.png') no-repeat center center;
                 background-size: 100%;
             }
         .box-main-trivia .question{
@@ -353,7 +357,7 @@ body{
                 font: 16px/1.8 "Noto Serif KR", serif;
                 font-weight: 400;
                 margin: 0 auto;
-                max-width: 450px;
+                max-width: 500px;
                 text-align: center;
             }
                 .box-ctn-resultado p span{
