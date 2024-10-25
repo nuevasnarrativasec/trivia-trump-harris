@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css?v8">
+    <link rel="stylesheet" href="./css/style.css?v9">
 
     <style>
         #gpt_zocalo, 
@@ -70,7 +70,7 @@
                 Harris
             </h1>
             <p>
-                ¿Con qué candidato simpatizas más?
+                Las elecciones del 5 de noviembre en Estados Unidos pondrán fin a una polarizada y reñida campaña electoral entre el exmandatario republicano y la vicepresidenta demócrata. Descubre con quién simpatizas más en base a sus ideas.
             </p>
             <button onclick="startQuiz()">Empezar</button>
         </div>      
@@ -117,7 +117,7 @@
                         <input type="radio" name="q2" value='Trump'>A. “Cuanto más alto sea el arancel, más probable es que la empresa venga a EE.UU., y construya una fábrica en EE.UU. para no tener que pagar el arancel”.
                     </label>
                     <label>
-                        <input type="radio" name="q2" value='Harris'>B. "Mi plan económico fortalecerá la economía de Estados Unidos porque fortalecerá las pequeñas empresas. El de [mi rival] la debilitará".
+                        <input type="radio" name="q2" value='Harris'>B. "No se puede simplemente lanzar la idea de imponer aranceles de manera generalizada, y ese es parte del problema con Donald Trump […] Vamos a tener que asegurarnos de que las grandes corporaciones y los multimillonarios paguen la parte que les corresponde".
                     </label> 
                 </div>
                 <div class="box-botones">
@@ -298,7 +298,7 @@
             const descriptions = {
                 'Trump': '<img src="./img/bg-resultado-trump.jpg" alt="Trump" width="100%"><h4 id="trump"><span>Te identificas con</span>Donald Trump</h4><p><span>Tus posturas en temas clave te acercan más a las ideas y propuestas del candidato republicano Donald Trump.</span> El expresidente ha centrado su campaña en la promesa de mano dura frente a la inmigración y ha prometido deportaciones masivas. En cuanto a la economía propone extender los recortes de impuestos promulgados en el 2017 para beneficiar a individuos y empresas por igual y volver a imponer aranceles a la mayoría de los productos extranjeros, sobre todo a aquellos procedentes de China.</p>',
                 'Harris': '<img src="./img/bg-resultado-harris.jpg" alt="Harris" width="100%"><h4 id="harris"><span>Te identificas con</span>Kamala Harris</h4><p><span>Tus posturas en temas clave te acercan más a las ideas y propuestas de la candidata demócrata Kamala Harris.</span> La vicepresidenta ha dicho que el sistema de inmigración es fallido y que debe arreglarlo. Responsabiliza a Trump por haber bloqueado una iniciativa bipartidista que hubiera podido aportar algunas soluciones al espinoso tema. En cuanto a la economía busca mayores beneficios fiscales para las familias de clase media y trabajadora, pero aumentando los impuestos para los más ricos. </p>',
-                'Empate': '<img src="./img/bg-header-interior.jpg" alt="Empate" width="100%"><h4 id="empate"><span>¡Es un empate!</span></h4><p>Parece que te identificas por igual con las posturas de Donald Trump y Kamala Harris. Tus respuestas sugieren una mezcla de ideas que podrían alinearse con ambas figuras políticas.</p>'
+                'Empate': '<img src="./img/bg-header-interior.jpg" alt="Empate" width="100%"><h4 id="empate"><span>¡Es un empate!</span></h4><p>Parece que tienes ideas compatibles a las de Kamala Harris y Donald Trump en los temas que más le preocupan a los estadounidenses.</p>'
             };
 
             const answers = new FormData(form);
